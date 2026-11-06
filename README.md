@@ -22,29 +22,29 @@ $$
 $$
 
 The simulator implements two time-stepping methods:
-1. **Standard Forward Euler (Explicit):**
-   
-   $$
-   \mathbf{r}_{n+1} = \mathbf{r}_n + \mathbf{v}_n \Delta t
-   $$
-   
-   $$
-   \mathbf{v}_{n+1} = \mathbf{v}_n + \mathbf{a}_n \Delta t
-   $$
-   
-   *Note: Subject to unphysical energy amplification over extended orbital periods.*
+### 1. Standard Forward Euler (Explicit)
 
-2. **Euler-Cromer (Semi-Implicit / Symplectic):**
-   
-   $$
-   \mathbf{v}_{n+1} = \mathbf{v}_n + \mathbf{a}_n \Delta t
-   $$
-   
-   $$
-   \mathbf{r}_{n+1} = \mathbf{r}_n + \mathbf{v}_{n+1} \Delta t
-   $$
-   
-   *Note: Preserves phase-space area and eliminates spiral energy drift.*
+$$
+\mathbf{r}_{n+1} = \mathbf{r}_n + \mathbf{v}_n \Delta t
+$$
+
+$$
+\mathbf{v}_{n+1} = \mathbf{v}_n + \mathbf{a}_n \Delta t
+$$
+
+*Note: Subject to unphysical energy amplification over extended orbital periods.*
+
+### 2. Euler-Cromer (Semi-Implicit / Symplectic)
+
+$$
+\mathbf{v}_{n+1} = \mathbf{v}_n + \mathbf{a}_n \Delta t
+$$
+
+$$
+\mathbf{r}_{n+1} = \mathbf{r}_n + \mathbf{v}_{n+1} \Delta t
+$$
+
+*Note: Preserves phase-space area and eliminates spiral energy drift.*
 
 ---
 
