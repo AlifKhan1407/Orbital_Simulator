@@ -48,6 +48,18 @@ $$
 
 ---
 
+## Simulation Outputs
+
+### 12-Year Multi-Body Solar System
+![12-Year Solar System Simulation](solar_system_12yr.png)
+
+### Energy Drift Comparison (Forward Euler vs. Euler-Cromer)
+| Forward Euler (Unstable Drift) | Euler-Cromer (Symplectic / Stable) |
+| :---: | :---: |
+| ![Forward Euler](earth_forward_euler.png) | ![Euler-Cromer](earth_euler_cromer.png) |
+
+---
+
 ## Project Architecture
 
 ```text
@@ -58,14 +70,3 @@ nbody-orbital-sim/
 ├── run_simulation.py        # Demo script for 1-body, 2-body, and N-body runs
 ├── README.md                # Project documentation
 └── requirements.txt         # Dependencies (numpy, matplotlib)
-
-
-## Simulation Outputs
-
-### 12-Year Multi-Body Solar System
-![12-Year Solar System Simulation](solar_system_12yr.png)
-
-### Energy Drift Comparison (Forward Euler vs. Euler-Cromer)
-| Forward Euler (Unstable Drift) | Euler-Cromer (Symplectic / Stable) |
-| :---: | :---: |
-| ![Forward Euler](earth_forward_euler.png) | ![Euler-Cromer](earth_euler_cromer.png) |
